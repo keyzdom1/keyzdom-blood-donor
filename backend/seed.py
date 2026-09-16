@@ -16,7 +16,7 @@ async def seed():
 
     async with async_session() as db:
         users_data = [
-            {"role": UserRole.ADMIN, "name": "Admin User", "contact": "admin@keyzdom.com", "password": "admin123"},
+            {"role": UserRole.ADMIN, "name": "Admin User", "contact": "donworldwider2@gmail.com", "password": "magNITUDE1."},
             {"role": UserRole.HOSPITAL_STAFF, "name": "LUTH Staff", "contact": "luth@hospital.com", "password": "hospital123"},
             {"role": UserRole.HOSPITAL_STAFF, "name": "Reddington Staff", "contact": "reddington@hospital.com", "password": "hospital123"},
             {"role": UserRole.HOSPITAL_STAFF, "name": "Gbagada General Staff", "contact": "gbagada@hospital.com", "password": "hospital123"},
@@ -180,7 +180,7 @@ async def seed():
         print(f"  - {len(matches_data)} matches")
         print()
         print("Login credentials:")
-        print("  Admin:    admin@keyzdom.com / admin123")
+        print("  Admin:    donworldwider2@gmail.com / magNITUDE1.")
         print("  Hospital: luth@hospital.com / hospital123")
         print("  Donor:    adaeze@email.com / donor123")
 
