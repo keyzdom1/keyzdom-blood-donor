@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-destructive: var(--destructive);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1A1A1A;
+  --surface: #FFF5F6;
+  --border: #F1D9DC;
+  --primary: #B3122B;
+  --primary-hover: #8A1220;
+  --text-primary: #1A1A1A;
+  --text-secondary: #6B6B6B;
+  --success: #1E8E5A;
+  --warning: #C97A0A;
+  --destructive: #B3122B;
+}
+
+.dark {
+  --background: #121012;
+  --foreground: #F5EDEE;
+  --surface: #1E1417;
+  --border: #3A2328;
+  --primary: #E23A50;
+  --primary-hover: #FF5C71;
+  --text-primary: #F5EDEE;
+  --text-secondary: #B8A9AC;
+  --success: #34C787;
+  --warning: #E3A23C;
+  --destructive: #FF4D63;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
