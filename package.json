@@ -1,0 +1,12 @@
+{
+  "name": "keyzdom-blood-donor",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd keyzdom-blood-donor && npm run dev",
+    "build": "cd keyzdom-blood-donor && npm run build",
+    "start": "cd keyzdom-blood-donor && npm run start",
+    "lint": "cd keyzdom-blood-donor && npm run lint",
+    "install:all": "cd keyzdom-blood-donor && npm install"
+  }
+}
