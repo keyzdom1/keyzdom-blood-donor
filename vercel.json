@@ -1,6 +1,3 @@
 {
-  "buildCommand": "cd keyzdom-blood-donor && npm install && npm run build",
-  "outputDirectory": "keyzdom-blood-donor/.next",
-  "framework": "nextjs",
-  "installCommand": "cd keyzdom-blood-donor && npm install"
+  "framework": "nextjs"
 }

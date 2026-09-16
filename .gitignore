@@ -3,20 +3,14 @@ node_modules/
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
 .venv/
 venv/
 env/
 
-# Build
-build/
-dist/
-*.egg-info/
-*.egg
-
 # Next.js
 .next/
 out/
+build/
 
 # Environment
 .env
@@ -47,5 +41,13 @@ docker-compose.override.yml
 *.log
 
 # TypeScript
-tsconfig.tsbuildinfo
+*.tsbuildinfo
 next-env.d.ts
+
+# Vercel
+.vercel
+
+# Backend
+backend/.venv/
+backend/__pycache__/
+backend/.pytest_cache/
