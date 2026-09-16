@@ -1,9 +1,11 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
+type UserRole = "donor" | "hospital_staff" | "admin";
+
 interface User {
   id: number;
-  role: "donor" | "hospital_staff" | "admin";
+  role: UserRole;
   name: string;
   contact: string;
 }
