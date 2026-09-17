@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useCallback } from "react";
 
-const WS_URL = process.env.NEXT_PUBLIC_WS_URL || "ws://localhost:8000";
+const WS_URL = process.env.NEXT_PUBLIC_WS_URL || "wss://keyzdom-api.onrender.com";
 
 export function useWebSocket(path: string, onMessage: (data: unknown) => void) {
   const wsRef = useRef<WebSocket | null>(null);
