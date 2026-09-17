@@ -46,7 +46,9 @@ async def get_current_user(
     return user
 
 
-async def require_role(allowed_roles: list[str], user: User = Depends(get_current_user)) -> User:
-    if user.role.value not in allowed_roles:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Insufficient permissions")
-    return user
+def require_role(allowed_roles: list[str]):
+    async def _require_role(user: User = Depends(get_current_user)) -> User:
+        if user.role.value not in allowed_roles:
+            raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Insufficient permissions")
+        return user
+    return _require_role
